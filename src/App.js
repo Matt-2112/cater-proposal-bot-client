@@ -11,12 +11,12 @@ function App() {
       numPeople: document.getElementById('numPeople').value
     }
 
-    axios.post('https://termite-underwear.cyclic.app/api/ask', data)
+    axios.post('https://termite-underwear.cyclic.app/api/ask', data, {headers:{"Content-Type" : "application/json"}})
     .then(function (response) {
       setResponse(response);
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(error.response.data);
     });
 
 
