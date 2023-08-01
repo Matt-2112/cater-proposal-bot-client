@@ -44,9 +44,9 @@ function App() {
       <button onClick={onClick}>Generate</button>
      </div>
      <div className='response'>
-        <p>
+        <pre style={{whiteSpace: 'pre-line'}}>
           {response}
-        </p>
+        </pre>
      </div>
     </div>
   );
