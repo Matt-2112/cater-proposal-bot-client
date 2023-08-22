@@ -7,6 +7,9 @@ function App() {
   const [response, setResponse] = useState('...');
 
   const onClick = async () => {
+
+    setResponse('One Moment...')
+
     const data = {
       numPeople: document.getElementById('numPeople').value,
       numApps: document.getElementById('numApps').value,
